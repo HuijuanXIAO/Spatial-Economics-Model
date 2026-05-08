@@ -4,9 +4,16 @@ clear
 % Read model data
 A = readmatrix('ModelData.csv');
 
-% Read spatial weight matrix
-W1_raw = readmatrix('SpatialWeightMatrix.csv');
+% Read compressed spatial weight matrix
+gzFile = 'SpatialWeightMatrix.csv.gz';
+csvFile = 'SpatialWeightMatrix.csv';
 
+% Unzip only if the CSV file does not already exist
+if ~isfile(csvFile)
+    gunzip(gzFile);
+end
+
+W1_raw = readmatrix(csvFile);
 % Time periods: 2010¨C2020
 T = 11;
 
