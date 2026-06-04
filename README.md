@@ -1,4 +1,4 @@
-This repository contains the data and MATLAB code used to reproduce the analyses and results presented in the Nature Communications paper:
+This repository contains the data and MATLAB code used to reproduce the analyses and results presented in Table 1 in the Nature Communications paper:
 
 Xiao, H., Yoo, C., Weng, Q. et al. Spatiotemporal changes in inter-city sustainability impacts linked to emission challenges worldwide. Nature Communications (2026). 
 https://doi.org/10.1038/s41467-026-73515-0
